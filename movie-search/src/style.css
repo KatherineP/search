@@ -1,0 +1,201 @@
+@charset "UTF-8";
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.header {
+  height: 110px;
+  color: #fff;
+  background-color: #2C3E50;
+  background-image: url(assets/header.svg);
+  background-size: cover;
+  margin-bottom: 40px;
+  overflow-x: hidden;
+}
+.header h1 {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 110px;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.carousel-container {
+  margin: 50px 0 50px 0;
+  max-width: 1060px;
+}
+
+:active, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.prev-arrow:hover {
+  opacity: 0.5;
+}
+
+.next-arrow:hover {
+  opacity: 0.5;
+}
+
+.footer {
+  width: 100%;
+  min-height: 60px;
+  background-color: #33333f;
+  border-top: 2px solid #242A33;
+  margin-top: 40px;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 60px;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.footer .footer-container a {
+  color: #eee;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer .footer-container a:hover {
+  color: #d62c1a;
+}
+.footer .footer-container .github {
+  position: relative;
+  padding-left: 50px;
+}
+.footer .footer-container .github::before {
+  content: "";
+  font-family: FontAwesome;
+  left: 0px;
+  top: -4px;
+  width: 32px;
+  height: 32px;
+}
+
+.card .card-header {
+  display: block;
+  height: 58px;
+  overflow-y: hidden;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  white-space: pre-wrap;
+  text-overflow: clip;
+}
+.card .movie-img {
+  height: 445px;
+  background-size: cover;
+}
+.card .card-footer {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 15px;
+  padding-bottom: 5px;
+}
+.card .imdb-rating {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.card .imdb-rating span::before {
+  content: "";
+  font-family: FontAwesome;
+  width: 24px;
+  height: 24px;
+  left: 105px;
+  padding-right: 10px;
+  color: gold;
+}
+
+.search-form {
+  position: relative;
+  width: 1060px;
+  margin: 0 auto;
+  background: #A3D0C3;
+}
+
+.search-btn, .search-input, .clear, .keyboard {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.search-input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+}
+
+.search-btn {
+  height: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  padding-right: 20px;
+}
+.search-btn:before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+.search-btn:hover {
+  opacity: 0.5;
+}
+
+.keyboard {
+  height: 42px;
+  position: absolute;
+  top: 0px;
+  right: 47px;
+  cursor: pointer;
+}
+.keyboard:before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 20px;
+  color: #F9F0DA;
+}
+.keyboard:hover {
+  opacity: 0.5;
+}
+
+.clear {
+  height: 42px;
+  position: absolute;
+  top: 0px;
+  right: 91px;
+  cursor: pointer;
+}
+.clear:before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 25px;
+  color: #F9F0DA;
+}
+.clear:hover {
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=style.css.map */
